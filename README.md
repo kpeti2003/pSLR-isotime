@@ -1,1 +1,5 @@
-# pSLR-isotime
+This notebook calculates and plots isolation time distributions for 92Nb and 146Sm using abundance ratios from the CCSN models from [Ritter et al. (2018)](https://doi.org/10.3390/universe8070343) and [Roberti et al. (2024)](https://doi.org/10.1051/0004-6361/202449994) and the SNIa ratios from [Lugaro et al. (2016)](https://doi.org/10.1073/pnas.1519344113). This work is largely based on re-implementing the _Mathematica_ notebook 'isolation_time_figures.nb' from [Leckenby et al. (2024)](https://doi.org/10.5281/zenodo.11560338) in _Python_ and expanding its functionality to account for mean-life uncertainties. 
+
+To model the GCE stochastic uncertainties described in [Côte et al. (2019)](https://doi.org/10.3847/1538-4357/ab21d1)), we fit skew-normal distributions using the medians and confidence intervals provided in their Table 3. The shape, location, and scale parameters were optimized to match the given percentiles, assuming that a skew-normal distribution is a sufficient approximation.
+
+**Note**: The notebook requires the 'production_ratios.txt' input file (provided). Exported figures and a PDF version of the notebook are also included."
